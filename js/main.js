@@ -69,22 +69,59 @@ document.querySelectorAll('[data-reveal]').forEach(el => {
 
 /* ── Idea box form ── */
 const ideaForm = document.getElementById('idea-form');
-ideaForm?.addEventListener('submit', e => {
+ideaForm?.addEventListener('submit', async e => {
   e.preventDefault();
   const btn = ideaForm.querySelector('[type="submit"]');
-  btn.textContent = 'Idée envoyée ✓';
+  btn.textContent = 'Envoi…';
   btn.disabled = true;
-  btn.style.background = '#1A4028';
-  setTimeout(() => ideaForm.reset(), 2000);
+  try {
+    const res = await fetch('https://formspree.io/f/mqejzvpn', {
+      method: 'POST',
+      body: new FormData(ideaForm),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      btn.textContent = 'Idée envoyée ✓';
+      btn.style.background = '#1A4028';
+      setTimeout(() => {
+        ideaForm.reset();
+        btn.textContent = 'Envoyer l\'idée →';
+        btn.disabled = false;
+        btn.style.background = '';
+      }, 3000);
+    } else {
+      btn.textContent = 'Erreur — réessaie';
+      btn.disabled = false;
+    }
+  } catch {
+    btn.textContent = 'Erreur — réessaie';
+    btn.disabled = false;
+  }
 });
 
 /* ── Application form ── */
 const appForm = document.getElementById('application-form');
-appForm?.addEventListener('submit', e => {
+appForm?.addEventListener('submit', async e => {
   e.preventDefault();
   const btn = appForm.querySelector('[type="submit"]');
-  btn.textContent = "Candidature reçue — on verra si t'es à la hauteur";
+  btn.textContent = 'Envoi…';
   btn.disabled = true;
+  try {
+    const res = await fetch('https://formspree.io/f/mlgvryjv', {
+      method: 'POST',
+      body: new FormData(appForm),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      btn.textContent = "Candidature reçue — on verra si t'es à la hauteur";
+    } else {
+      btn.textContent = 'Erreur — réessaie';
+      btn.disabled = false;
+    }
+  } catch {
+    btn.textContent = 'Erreur — réessaie';
+    btn.disabled = false;
+  }
 });
 
 /* ── Score counter (recrutement) ── */
