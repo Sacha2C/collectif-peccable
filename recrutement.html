@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rejoindre le collectif — Peccable</title>
+  <meta name="description" content="Tu veux rejoindre le collectif Peccable ? Lis les conditions. Réponds aux questions. Accepte le verdict." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Peccable</a>
+    <button class="nav__toggle" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="personnes.html">Les Peccables</a></li>
+      <li><a href="editions.html">Éditions</a></li>
+      <li><a href="prochaine-edition.html">La Prochaine</a></li>
+      <li><a href="recrutement.html" class="nav-cta active">Rejoindre</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav__mobile">
+    <button class="nav__mobile-close" aria-label="Fermer" style="position:absolute;top:2rem;right:2.5rem;font-size:2rem;color:var(--cream);">✕</button>
+    <a href="index.html">Accueil</a>
+    <a href="personnes.html">Les Peccables</a>
+    <a href="editions.html">Éditions</a>
+    <a href="prochaine-edition.html">La Prochaine</a>
+    <a href="recrutement.html">Rejoindre</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="page-hero" style="background:var(--orange);min-height:60vh;">
+    <div class="hero__bg-text" style="color:rgba(255,255,255,0.06);">JOIN</div>
+    <div class="container">
+      <span class="label" style="color:rgba(255,255,255,0.6);">Recrutement</span>
+      <h1 style="color:var(--white);">T'as des<br>balls ?</h1>
+      <p class="page-hero__sub" style="color:rgba(255,255,255,0.7);">
+        Le collectif Peccable peut s'agrandir. Mais pas n'importe comment.
+        Lis la suite avant de commencer à remplir le formulaire.
+      </p>
+    </div>
+  </section>
+
+  <!-- Ce qu'on cherche -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="label">Le profil idéal</span>
+        <div class="divider"></div>
+        <h2>Est-ce que<br><em style="color:var(--orange);">tu es Peccable ?</em></h2>
+        <p>
+          Coche les cases. Chaque case a une valeur. En dessous de 50 points,
+          t'as peu de chances. Au-dessus de 80, tu mens probablement.
+          Entre les deux : on verra.
+        </p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:4rem;align-items:start;" data-reveal>
+        <div>
+          <div class="scoring-item">
+            <div class="scoring-item__icon">🥾</div>
+            <div>
+              <div class="scoring-item__title">Tu marches minimum 20 km / jour sans te plaindre (trop)</div>
+              <div class="scoring-item__desc">Pleurer un peu c'est humain. Abandonner c'est non.</div>
+            </div>
+            <div class="scoring-item__pts">+15</div>
+            <label style="display:flex;align-items:center;margin-left:0.5rem;">
+              <input type="checkbox" class="criterion-check" data-pts="15" style="width:18px;height:18px;accent-color:var(--orange);cursor:pointer;" />
+            </label>
+          </div>
+
+          <div class="scoring-item">
+            <div class="scoring-item__icon">🍳</div>
+            <div>
+              <div class="scoring-item__title">Tu sais cuisiner ou tu manges avec enthousiasme</div>
+              <div class="scoring-item__desc">L'un ou l'autre suffit. Les deux, c'est encore mieux.</div>
+            </div>
+            <div class="scoring-item__pts">+12</div>
+            <label style="display:flex;align-items:center;margin-left:0.5rem;">
+              <input type="checkbox" class="criterion-check" data-pts="12" style="width:18px;height:18px;accent-color:var(--orange);cursor:pointer;" />
+            </label>
+          </div>
+
+          <div class="scoring-item">
+            <div class="scoring-item__icon">🎲</div>
+            <div>
+              <div class="scoring-item__title">Tu joues aux jeux de société sans renverser la table si tu perds</div>
+              <div class="scoring-item__desc">Le fair-play est une valeur fondamentale. Enfin plus ou moins.</div>
+            </div>
+            <div class="scoring-item__pts">+10</div>
+            <label style="display:flex;align-items:center;margin-left:0.5rem;">
+              <input type="checkbox" class="criterion-check" data-pts="10" style="width:18px;height:18px;accent-color:var(--orange);cursor:pointer;" />
+            </label>
+          </div>
+
+          <div class="scoring-item">
+            <div class="scoring-item__icon">☀</div>
+            <div>
+              <div class="scoring-item__title">Tu es capable de te lever à 6h du mat en faisant semblant d'être heureux</div>
+              <div class="scoring-item__desc">Le sourire est facultatif. Le lever ne l'est pas.</div>
+            </div>
+            <div class="scoring-item__pts">+12</div>
+            <label style="display:flex;align-items:center;margin-left:0.5rem;">
+              <input type="checkbox" class="criterion-check" data-pts="12" style="width:18px;height:18px;accent-color:var(--orange);cursor:pointer;" />
+            </label>
+          </div>
+
+          <div class="scoring-item">
+            <div class="scoring-item__icon">🧀</div>
+            <div>
+              <div class="scoring-item__title">Tu aimes le fromage (minimum 3 variétés)</div>
+              <div class="scoring-item__desc">C'est discriminant. On assume.</div>
+            </div>
+            <div class="scoring-item__pts">+10</div>
+            <label style="display:flex;align-items:center;margin-left:0.5rem;">
+              <input type="checkbox" class="criterion-check" data-pts="10" style="width:18px;height:18px;accent-color:var(--orange);cursor:pointer;" />
+            </label>
+          </div>
+
+          <div class="scoring-item">
+            <div class="scoring-item__icon">🤙</div>
+            <div>
+              <div class="scoring-item__title">Tu t'adaptes, tu râles peu, tu contribues beaucoup</div>
+              <div class="scoring-item__desc">La bonne humeur en groupe, ça se construit collectivement.</div>
+            </div>
+            <div class="scoring-item__pts">+15</div>
+            <label style="display:flex;align-items:center;margin-left:0.5rem;">
+              <input type="checkbox" class="criterion-check" data-pts="15" style="width:18px;height:18px;accent-color:var(--orange);cursor:pointer;" />
+            </label>
+          </div>
+
+          <div class="scoring-item">
+            <div class="scoring-item__icon">📸</div>
+            <div>
+              <div class="scoring-item__title">Tu fais de belles photos (ou tu arrêtes de faire semblant)</div>
+              <div class="scoring-item__desc">On a besoin d'archives visuelles. Le filtre "sunset" ne compte pas.</div>
+            </div>
+            <div class="scoring-item__pts">+8</div>
+            <label style="display:flex;align-items:center;margin-left:0.5rem;">
+              <input type="checkbox" class="criterion-check" data-pts="8" style="width:18px;height:18px;accent-color:var(--orange);cursor:pointer;" />
+            </label>
+          </div>
+
+          <div class="scoring-item">
+            <div class="scoring-item__icon">🧭</div>
+            <div>
+              <div class="scoring-item__title">Tu connais Alltrails, Komoot, ou au moins Google Maps en mode offline</div>
+              <div class="scoring-item__desc">On n'a pas toujours du réseau. C'est le principe.</div>
+            </div>
+            <div class="scoring-item__pts">+8</div>
+            <label style="display:flex;align-items:center;margin-left:0.5rem;">
+              <input type="checkbox" class="criterion-check" data-pts="8" style="width:18px;height:18px;accent-color:var(--orange);cursor:pointer;" />
+            </label>
+          </div>
+
+          <div class="scoring-item" style="border-color:var(--orange);background:rgba(232,69,26,0.04);">
+            <div class="scoring-item__icon" style="background:rgba(232,69,26,0.12);">⭐</div>
+            <div>
+              <div class="scoring-item__title">BONUS : Tu as une spécialité culinaire qu'on n'a jamais goûtée</div>
+              <div class="scoring-item__desc">À démontrer sur le terrain. Les candidatures théoriques ne comptent pas.</div>
+            </div>
+            <div class="scoring-item__pts" style="color:var(--gold);">+20</div>
+            <label style="display:flex;align-items:center;margin-left:0.5rem;">
+              <input type="checkbox" class="criterion-check" data-pts="20" style="width:18px;height:18px;accent-color:var(--gold);cursor:pointer;" />
+            </label>
+          </div>
+        </div>
+
+        <div style="position:sticky;top:120px;">
+          <div style="background:var(--forest);border-radius:var(--radius-xl);padding:2.5rem;text-align:center;">
+            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--gold);margin-bottom:1rem;">Ton score</div>
+            <div style="font-family:var(--font-display);font-size:5rem;font-weight:900;color:var(--cream);line-height:1;">
+              <span id="live-score">0</span>
+            </div>
+            <div style="font-size:0.85rem;color:rgba(249,245,239,0.4);margin-top:0.5rem;">/ 110 points</div>
+            <div style="margin:2rem 0;height:1px;background:rgba(249,245,239,0.1);"></div>
+            <div id="score-verdict" style="font-size:0.9rem;color:rgba(249,245,239,0.55);font-style:italic;line-height:1.6;">
+              Coche les cases pour voir ton verdict.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulaire de candidature -->
+  <section class="section" style="background:var(--cream-dark);">
+    <div class="container container--sm">
+      <div class="section-header" data-reveal>
+        <span class="label">La candidature</span>
+        <div class="divider"></div>
+        <h2>Le formulaire<br><em style="color:var(--orange);">sérieux</em></h2>
+        <p>
+          Si t'es encore là après avoir lu tout ça, c'est bon signe.
+          Remplis le formulaire. On te recontacte si le profil colle.
+          Si t'as une faute d'orthographe dans ton prénom, tu perds déjà 8 points.
+        </p>
+      </div>
+
+      <form id="application-form" action="#" method="POST" data-reveal style="background:var(--white);border-radius:var(--radius-xl);padding:3rem;box-shadow:var(--shadow-lg);">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="prenom">Prénom *</label>
+            <input class="form-input" type="text" id="prenom" name="prenom" placeholder="Le vrai, pas le pseudo" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="nom">Nom *</label>
+            <input class="form-input" type="text" id="nom" name="nom" placeholder="Celui sur la carte d'idendité" required />
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="email">Email *</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="tu@preferes.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="age">Âge</label>
+            <input class="form-input" type="number" id="age" name="age" placeholder="On est vers les 30" min="18" max="99" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="connexion">Comment tu nous as trouvés / qui t'envoie ?</label>
+          <input class="form-input" type="text" id="connexion" name="connexion" placeholder="Un membre du collectif, le hasard, un algorithme..." />
+          <div class="form-hint">Un contact interne améliore tes chances. Ce n'est pas du favoritisme, c'est de l'efficacité.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="niveau">Ton niveau rando *</label>
+          <select class="form-select" id="niveau" name="niveau" required>
+            <option value="" disabled selected>Honnêteté recommandée</option>
+            <option value="debutant">Débutant — je marche en forêt le dimanche</option>
+            <option value="intermediaire">Intermédiaire — je fais des journées, parfois je souffre</option>
+            <option value="confirme">Confirmé — le dénivelé positif ne me fait pas peur</option>
+            <option value="expert">Expert — je porte le sac de tout le monde en montant</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="specialite">Ta spécialité culinaire</label>
+          <input class="form-input" type="text" id="specialite" name="specialite" placeholder="Ex : risotto à la truffe, tarte tatin en bivouac, raclette improvisée..." />
+          <div class="form-hint">Obligatoire si tu veux le bonus. Doit être vérifiable sur le terrain.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="motivation">Pourquoi tu veux rejoindre Peccable ? *</label>
+          <textarea class="form-textarea" id="motivation" name="motivation" style="min-height:160px;"
+            placeholder="Sois honnête. Pas de cover letter LinkedIn. Dis-nous ce qui t'attire là-dedans, pourquoi t'es capable d'être Peccable, et si tu as quelque chose à apporter au groupe."
+            required></textarea>
+          <div class="form-hint">Minimum 3 lignes. Maximum ton imagination. Les candidatures d'une phrase sont automatiquement rejetées.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="defi">Décris ta pire journée de rando (ou de sport)</label>
+          <textarea class="form-textarea" id="defi" name="defi" placeholder="On veut savoir comment tu te comportes quand ça va pas. C'est souvent là qu'on voit le vrai caractère."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reference">Un truc inattendu sur toi</label>
+          <input class="form-input" type="text" id="reference" name="reference" placeholder="Un talent caché, une passion étrange, un fait divers personnel..." />
+          <div class="form-hint">Pas obligatoire. Mais les candidats mémorables ont tendance à avoir une réponse ici.</div>
+        </div>
+
+        <div style="padding:1.2rem;background:var(--cream-dark);border-radius:var(--radius);margin-bottom:1.5rem;">
+          <label style="display:flex;align-items:flex-start;gap:0.75rem;cursor:pointer;">
+            <input type="checkbox" required style="width:18px;height:18px;accent-color:var(--forest);margin-top:2px;flex-shrink:0;" />
+            <span style="font-size:0.85rem;color:var(--muted);line-height:1.6;">
+              Je certifie que mes informations sont exactes, que je suis capable de marcher longtemps,
+              et que j'accepte le verdict du collectif sans appel possible.
+              (La démocratie, c'est pour les institutions.)
+            </span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;font-size:0.9rem;padding:1.2rem;">
+          Envoyer ma candidature →
+        </button>
+        <p style="text-align:center;margin-top:1rem;font-size:0.78rem;color:var(--muted);">
+          On lit toutes les candidatures. On répond à celles qui méritent une réponse.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container container--sm">
+      <div class="section-header" data-reveal>
+        <span class="label">Questions fréquentes</span>
+        <div class="divider"></div>
+        <h2>Ce que tout le monde<br>veut savoir</h2>
+      </div>
+
+      <div data-reveal>
+        <div class="accordion-item">
+          <button class="accordion-btn">
+            C'est payant ?
+            <span class="chevron">+</span>
+          </button>
+          <div class="accordion-body">
+            Les frais de l'édition sont partagés entre participants. Hébergement, nourriture,
+            transports — on met en commun. Il n'y a pas de cotisation annuelle,
+            juste une participation aux frais réels de chaque édition.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn">
+            Je dois être en forme physique ?
+            <span class="chevron">+</span>
+          </button>
+          <div class="accordion-body">
+            Oui. Pas au niveau de partir en ultra-trail, mais il faut pouvoir tenir
+            sur 5 jours avec du dénivelé et un sac à dos. Si tu ne fais pas de sport,
+            commence par une rando avant de postuler. Ce sera honnête envers tout le monde.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn">
+            Combien de places il reste ?
+            <span class="chevron">+</span>
+          </button>
+          <div class="accordion-body">
+            On ne le sait pas encore précisément. Le collectif a une taille optimale
+            (entre 6 et 10 personnes selon la logistique). Les candidatures sont étudiées
+            en fonction du profil, pas de l'ordre d'arrivée.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn">
+            Et si je connais personne dans le groupe ?
+            <span class="chevron">+</span>
+          </button>
+          <div class="accordion-body">
+            C'est un facteur, pas un bloquant. Les meilleures intégrations ont parfois
+            été des profils venus de l'extérieur. Ce qui compte, c'est la compatibilité.
+            Quelques questions dans le formulaire permettront de la jauger.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn">
+            Sous quel délai je reçois une réponse ?
+            <span class="chevron">+</span>
+          </button>
+          <div class="accordion-body">
+            Honnêtement, ça dépend de la période. En préparation d'édition, on est réactifs.
+            En dehors, un peu moins. Quelques semaines en général. Ne relance pas avant un mois.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__logo">Peccable</div>
+          <p class="footer__tagline">Le collectif qui mange bien et marche beaucoup. Et dans cet ordre, généralement.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Pages</div>
+          <nav class="footer__links">
+            <a href="index.html">Accueil</a>
+            <a href="personnes.html">Les Peccables</a>
+            <a href="editions.html">Éditions</a>
+            <a href="prochaine-edition.html">La Prochaine</a>
+            <a href="recrutement.html">Rejoindre</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer__col-title">Éditions</div>
+          <nav class="footer__links">
+            <a href="editions.html#pioniere">La Pionnière (2020)</a>
+            <a href="editions.html#bapteme">Le Baptême (2021)</a>
+            <a href="editions.html#confirmation">La Confirmation (2022)</a>
+            <a href="editions.html#inchallah">Inchallah (2023)</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer__col-title">Rejoindre</div>
+          <nav class="footer__links">
+            <a href="prochaine-edition.html">Proposer une idée</a>
+            <a href="recrutement.html">Candidater</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2024 Collectif Peccable</span>
+        <span class="footer__edition">Postule. On verra.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* Score verdict */
+    function updateVerdict(score) {
+      const el = document.getElementById('score-verdict');
+      if (!el) return;
+      if (score === 0) { el.textContent = 'Coche les cases pour voir ton verdict.'; return; }
+      if (score < 30) { el.textContent = '😬 Profil délicat. T'es sûr d'avoir lu les conditions ?'; return; }
+      if (score < 50) { el.textContent = '🤔 On est curieux, mais pas convaincus. La lettre fera la différence.'; return; }
+      if (score < 70) { el.textContent = '👀 Des atouts réels. Candidature envisageable.'; return; }
+      if (score < 90) { el.textContent = '💪 Profil solide. Le formulaire t'attend.'; return; }
+      el.textContent = '🏆 Soit t'es Peccable depuis toujours, soit tu triches. Dans les deux cas, postule.';
+    }
+    document.querySelectorAll('.criterion-check').forEach(c => {
+      c.addEventListener('change', () => {
+        let s = 0;
+        document.querySelectorAll('.criterion-check:checked').forEach(x => s += parseInt(x.dataset.pts||0));
+        const el = document.getElementById('live-score');
+        if (el) el.textContent = s;
+        updateVerdict(s);
+      });
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

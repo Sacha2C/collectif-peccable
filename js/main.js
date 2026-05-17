@@ -1,0 +1,100 @@
+/* ── Nav scroll effect ── */
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+  nav?.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+/* ── Mobile menu ── */
+const toggleBtn = document.querySelector('.nav__toggle');
+const mobileMenu = document.querySelector('.nav__mobile');
+const closeBtn = document.querySelector('.nav__mobile-close');
+
+toggleBtn?.addEventListener('click', () => {
+  mobileMenu?.classList.toggle('open');
+  document.body.style.overflow = mobileMenu?.classList.contains('open') ? 'hidden' : '';
+});
+closeBtn?.addEventListener('click', () => {
+  mobileMenu?.classList.remove('open');
+  document.body.style.overflow = '';
+});
+mobileMenu?.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+/* ── Active nav link ── */
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav__links a').forEach(link => {
+  const href = link.getAttribute('href');
+  if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    link.classList.add('active');
+  }
+});
+
+/* ── Accordion ── */
+document.querySelectorAll('.accordion-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const body = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.accordion-btn').forEach(b => {
+      b.classList.remove('open');
+      b.nextElementSibling?.classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.classList.add('open');
+      body?.classList.add('open');
+    }
+  });
+});
+
+/* ── Fade-up on scroll (IntersectionObserver) ── */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('[data-reveal]').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(28px)';
+  el.style.transition = 'opacity 0.65s ease, transform 0.65s ease';
+  observer.observe(el);
+});
+
+/* ── Idea box form ── */
+const ideaForm = document.getElementById('idea-form');
+ideaForm?.addEventListener('submit', e => {
+  e.preventDefault();
+  const btn = ideaForm.querySelector('[type="submit"]');
+  btn.textContent = 'Idée envoyée ✓';
+  btn.disabled = true;
+  btn.style.background = '#1A4028';
+  setTimeout(() => ideaForm.reset(), 2000);
+});
+
+/* ── Application form ── */
+const appForm = document.getElementById('application-form');
+appForm?.addEventListener('submit', e => {
+  e.preventDefault();
+  const btn = appForm.querySelector('[type="submit"]');
+  btn.textContent = 'Candidature reçue — on verra si t'es à la hauteur';
+  btn.disabled = true;
+});
+
+/* ── Score counter (recrutement) ── */
+function updateScore() {
+  const checked = document.querySelectorAll('.criterion-check:checked');
+  let score = 0;
+  checked.forEach(c => score += parseInt(c.dataset.pts || 0));
+  const scoreEl = document.getElementById('live-score');
+  if (scoreEl) scoreEl.textContent = score;
+}
+document.querySelectorAll('.criterion-check').forEach(c => {
+  c.addEventListener('change', updateScore);
+});

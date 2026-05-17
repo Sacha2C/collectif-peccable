@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peccable — Le collectif qui mange bien et marche beaucoup</title>
+  <meta name="description" content="Peccable, c'est un collectif de potes affamés qui font des trucs un peu fous dans des endroits encore plus fous. Cuisine, rando, bonne humeur." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Peccable</a>
+    <button class="nav__toggle" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="personnes.html">Les Peccables</a></li>
+      <li><a href="editions.html">Éditions</a></li>
+      <li><a href="prochaine-edition.html">La Prochaine</a></li>
+      <li><a href="recrutement.html" class="nav-cta">Rejoindre</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile">
+    <button class="nav__mobile-close" aria-label="Fermer" style="position:absolute;top:2rem;right:2.5rem;font-size:2rem;color:var(--cream);">✕</button>
+    <a href="index.html">Accueil</a>
+    <a href="personnes.html">Les Peccables</a>
+    <a href="editions.html">Éditions</a>
+    <a href="prochaine-edition.html">La Prochaine</a>
+    <a href="recrutement.html">Rejoindre</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg-text">PECCABLE</div>
+    <div class="container">
+      <span class="label fade-up">Collectif — Depuis 2020</span>
+      <h1 class="fade-up fade-up-delay-1">
+        Ni impec,<br>
+        ni <em>capable</em>.<br>
+        Juste Peccable.
+      </h1>
+      <p class="hero__sub fade-up fade-up-delay-2">
+        On est un collectif de potes de 30 ans qui randonneraient 25 km pour mériter un bon repas.
+        On documente nos aventures depuis 2020 parce que si c'est pas sur internet, ça n'a pas existé.
+      </p>
+      <div class="hero__actions fade-up fade-up-delay-3">
+        <a href="editions.html" class="btn btn--primary">Nos éditions</a>
+        <a href="recrutement.html" class="btn btn--outline">Rejoindre le collectif</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strip animé -->
+  <div class="strip">
+    <div class="strip__inner">
+      <span class="strip__item">Bonne cuisine</span>
+      <span class="strip__item">Longues randos</span>
+      <span class="strip__item">Jeux de société</span>
+      <span class="strip__item">Bivouacs douteux</span>
+      <span class="strip__item">Confit de canard en altitude</span>
+      <span class="strip__item">Bonne cuisine</span>
+      <span class="strip__item">Longues randos</span>
+      <span class="strip__item">Jeux de société</span>
+      <span class="strip__item">Bivouacs douteux</span>
+      <span class="strip__item">Confit de canard en altitude</span>
+    </div>
+  </div>
+
+  <!-- Manifeste -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;gap:6rem;">
+        <div data-reveal>
+          <span class="label">Notre philosophie</span>
+          <div class="divider"></div>
+          <h2>L'excellence<br><em style="font-style:italic;color:var(--orange)">sans la prétention</em></h2>
+          <p class="lead" style="margin-top:1.5rem;">
+            Peccable, c'est « impeccable » amputé de son préfixe.
+            Une imperfection revendiquée. On fait les choses bien, mais pas trop.
+            On mange bien, mais debout. On marche loin, mais on se plaint tout le temps.
+          </p>
+          <p style="margin-top:1rem;">
+            Né organiquement en 2021 sur les sentiers de la Vanoise, le nom s'est imposé
+            comme une évidence. Albert Camus disait que mal nommer un objet,
+            c'est ajouter au malheur du monde. Nous, on a bien nommé le nôtre.
+          </p>
+          <a href="personnes.html" class="btn btn--dark" style="margin-top:2rem;">Découvrir les membres</a>
+        </div>
+        <div data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <div style="background:var(--forest);border-radius:var(--radius-lg);padding:2rem;color:var(--cream);aspect-ratio:1;">
+            <div style="font-family:var(--font-display);font-size:3.5rem;font-weight:900;line-height:1;">4</div>
+            <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.15em;color:var(--gold);margin-top:0.5rem;">Éditions</div>
+            <div style="font-size:0.9rem;color:rgba(249,245,239,0.5);margin-top:0.5rem;">2020 → 2023</div>
+          </div>
+          <div style="background:var(--orange);border-radius:var(--radius-lg);padding:2rem;color:var(--white);aspect-ratio:1;">
+            <div style="font-family:var(--font-display);font-size:3.5rem;font-weight:900;line-height:1;">8</div>
+            <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.15em;color:rgba(255,255,255,0.7);margin-top:0.5rem;">Peccables</div>
+            <div style="font-size:0.9rem;color:rgba(255,255,255,0.6);margin-top:0.5rem;">confirmés et candidats</div>
+          </div>
+          <div style="background:var(--cream-dark);border-radius:var(--radius-lg);padding:2rem;aspect-ratio:1;">
+            <div style="font-family:var(--font-display);font-size:3.5rem;font-weight:900;line-height:1;color:var(--forest);">∞</div>
+            <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.15em;color:var(--muted);margin-top:0.5rem;">Calories</div>
+            <div style="font-size:0.9rem;color:var(--muted);margin-top:0.5rem;">consommées puis regagnées</div>
+          </div>
+          <div style="background:var(--gold);border-radius:var(--radius-lg);padding:2rem;aspect-ratio:1;">
+            <div style="font-family:var(--font-display);font-size:3.5rem;font-weight:900;line-height:1;color:var(--charcoal);">0</div>
+            <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.15em;color:rgba(17,17,17,0.6);margin-top:0.5rem;">Abandon</div>
+            <div style="font-size:0.9rem;color:rgba(17,17,17,0.5);margin-top:0.5rem;">depuis 2020 (par fierté)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dernière édition teaser -->
+  <section class="section" style="background:var(--forest);padding-top:var(--space-xl);padding-bottom:var(--space-xl);">
+    <div class="container">
+      <div class="section-header section-header--light" data-reveal>
+        <span class="label" style="color:var(--gold);">Dernière édition</span>
+        <div class="divider"></div>
+        <h2 style="color:var(--cream);">Inchallah —<br><em style="color:var(--gold);">Édition 2023</em></h2>
+        <p style="color:rgba(249,245,239,0.55);margin-top:1rem;">
+          La quatrième. Celle qu'on ne savait pas encore raconter.
+          L'histoire était à écrire — elle l'est maintenant.
+        </p>
+      </div>
+      <div class="grid-3" style="gap:1.5rem;">
+        <div data-reveal class="card" style="background:var(--forest-mid);border:1px solid rgba(249,245,239,0.08);">
+          <div class="card__img--placeholder" style="font-size:3rem;">⛰</div>
+          <div class="card__body">
+            <span class="tag tag--cream" style="margin-bottom:0.75rem;display:inline-block;">Jour 1</span>
+            <div class="card__title" style="color:var(--cream);">L'arrivée des troupes</div>
+            <p class="card__text" style="color:rgba(249,245,239,0.45);">On ne révèle pas tout. Sachez juste que personne n'était en retard. C'est inédit.</p>
+          </div>
+        </div>
+        <div data-reveal class="card" style="background:var(--forest-mid);border:1px solid rgba(249,245,239,0.08);">
+          <div class="card__img--placeholder" style="font-size:3rem;">🍽</div>
+          <div class="card__body">
+            <span class="tag tag--cream" style="margin-bottom:0.75rem;display:inline-block;">Jour 2</span>
+            <div class="card__title" style="color:var(--cream);">Le repas de la honte (positive)</div>
+            <p class="card__text" style="color:rgba(249,245,239,0.45);">Juliette a encore sorti l'impossible. Aucun réchaud n'a été maltraité dans l'opération.</p>
+          </div>
+        </div>
+        <div data-reveal class="card" style="background:var(--forest-mid);border:1px solid rgba(249,245,239,0.08);">
+          <div class="card__img--placeholder" style="font-size:3rem;">🎲</div>
+          <div class="card__body">
+            <span class="tag tag--cream" style="margin-bottom:0.75rem;display:inline-block;">Soirée</span>
+            <div class="card__title" style="color:var(--cream);">Jeux de société & comptes à régler</div>
+            <p class="card__text" style="color:rgba(249,245,239,0.45);">Les classements sont internes. Les rancœurs aussi. La prochaine édition tranchera.</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem;" data-reveal>
+        <a href="editions.html" class="btn btn--outline">Voir toutes les éditions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Rejoindre -->
+  <section class="section" style="background:var(--orange);">
+    <div class="container" style="text-align:center;">
+      <div data-reveal>
+        <span class="label" style="color:rgba(255,255,255,0.6);">Tu te reconnais là-dedans ?</span>
+        <h2 style="color:var(--white);margin:1rem 0;">T'as des balls ?<br>Postule.</h2>
+        <p style="color:rgba(255,255,255,0.75);max-width:480px;margin:0 auto 2.5rem;">
+          Si tu aimes manger, marcher, perdre aux jeux de société et te lever à 6h du mat
+          en faisant semblant d'être content — t'es potentiellement Peccable.
+        </p>
+        <a href="recrutement.html" class="btn" style="background:var(--white);color:var(--orange);">
+          Voir si je mérite ma place
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__logo">Peccable</div>
+          <p class="footer__tagline">
+            "Impeccable" moins le préfixe. Un collectif de potes qui font des trucs bien,
+            mais pas trop. Dans les Alpes, généralement.
+          </p>
+        </div>
+        <div>
+          <div class="footer__col-title">Pages</div>
+          <nav class="footer__links">
+            <a href="index.html">Accueil</a>
+            <a href="personnes.html">Les Peccables</a>
+            <a href="editions.html">Éditions</a>
+            <a href="prochaine-edition.html">La Prochaine</a>
+            <a href="recrutement.html">Rejoindre</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer__col-title">Éditions</div>
+          <nav class="footer__links">
+            <a href="editions.html#pioniere">La Pionnière (2020)</a>
+            <a href="editions.html#bapteme">Le Baptême (2021)</a>
+            <a href="editions.html#confirmation">La Confirmation (2022)</a>
+            <a href="editions.html#inchallah">Inchallah (2023)</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer__col-title">Idées folles</div>
+          <nav class="footer__links">
+            <a href="prochaine-edition.html">Proposer une idée</a>
+            <a href="recrutement.html">Candidater</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2024 Collectif Peccable — Tous droits moyennement réservés</span>
+        <span class="footer__edition">Édition 5 en préparation. Hamdoulillah.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

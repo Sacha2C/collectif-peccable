@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Prochaine Édition — Peccable</title>
+  <meta name="description" content="L'édition 5 se prépare. Propose tes idées pour la prochaine aventure Peccable." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Peccable</a>
+    <button class="nav__toggle" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="personnes.html">Les Peccables</a></li>
+      <li><a href="editions.html">Éditions</a></li>
+      <li><a href="prochaine-edition.html" class="active">La Prochaine</a></li>
+      <li><a href="recrutement.html" class="nav-cta">Rejoindre</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav__mobile">
+    <button class="nav__mobile-close" aria-label="Fermer" style="position:absolute;top:2rem;right:2.5rem;font-size:2rem;color:var(--cream);">✕</button>
+    <a href="index.html">Accueil</a>
+    <a href="personnes.html">Les Peccables</a>
+    <a href="editions.html">Éditions</a>
+    <a href="prochaine-edition.html">La Prochaine</a>
+    <a href="recrutement.html">Rejoindre</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="page-hero" style="min-height:65vh;background:var(--forest);">
+    <div class="hero__bg-text">05</div>
+    <div class="container">
+      <span class="label" style="color:var(--gold);">En construction</span>
+      <h1 style="color:var(--cream);">Édition 5 :<br><em style="color:var(--gold);">Inconnue au bataillon</em></h1>
+      <p class="page-hero__sub">
+        La date n'est pas encore fixée. La destination non plus.
+        C'est ça qui est excitant. En attendant, on prend les idées.
+      </p>
+    </div>
+  </section>
+
+  <!-- Ce qu'on sait -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="gap:6rem;align-items:start;">
+        <div data-reveal>
+          <span class="label">Ce qu'on sait</span>
+          <div class="divider"></div>
+          <h2>Les<br><em style="color:var(--orange);">invariants</em></h2>
+          <p class="lead" style="margin-top:1.5rem;">
+            Certaines choses ne changeront pas. Parce qu'elles définissent
+            ce qu'on est. Pas de négociation possible sur ces points.
+          </p>
+
+          <div style="margin-top:2.5rem;display:flex;flex-direction:column;gap:1rem;">
+            <div class="scoring-item">
+              <div class="scoring-item__icon">🥾</div>
+              <div>
+                <div class="scoring-item__title">Du dénivelé</div>
+                <div class="scoring-item__desc">Pas de rando sans souffrance. C'est dans l'ADN.</div>
+              </div>
+            </div>
+            <div class="scoring-item">
+              <div class="scoring-item__icon">🍽</div>
+              <div>
+                <div class="scoring-item__title">Un repas mémorable</div>
+                <div class="scoring-item__desc">Jamais à la cantoche. Toujours quelque chose dont on parle encore après.</div>
+              </div>
+            </div>
+            <div class="scoring-item">
+              <div class="scoring-item__icon">🎲</div>
+              <div>
+                <div class="scoring-item__title">Des jeux de société</div>
+                <div class="scoring-item__desc">En soirée, après manger. Les rancœurs du classement alimentent l'édition suivante.</div>
+              </div>
+            </div>
+            <div class="scoring-item">
+              <div class="scoring-item__icon">📍</div>
+              <div>
+                <div class="scoring-item__title">Un bel endroit</div>
+                <div class="scoring-item__desc">Le cadre fait partie de l'expérience. On ne transige pas là-dessus.</div>
+              </div>
+            </div>
+            <div class="scoring-item">
+              <div class="scoring-item__icon">🛏</div>
+              <div>
+                <div class="scoring-item__title">Un hébergement convenable</div>
+                <div class="scoring-item__desc">Bivouac acceptable. Gîte de charme idéal. Palace : pas le style.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal>
+          <span class="label">Ce qu'on ne sait pas encore</span>
+          <div class="divider"></div>
+          <h2>Les<br><em style="color:var(--forest-light);">questions ouvertes</em></h2>
+          <p class="lead" style="margin-top:1.5rem;">
+            C'est là que tu rentres en jeu. Ces cases sont vides.
+            Ta proposition peut les remplir.
+          </p>
+
+          <div style="margin-top:2.5rem;display:flex;flex-direction:column;gap:1rem;">
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                Où est-ce qu'on va ?
+                <span class="chevron">+</span>
+              </button>
+              <div class="accordion-body">
+                Les Alpes restent un terrain de prédilection, mais on n'est pas fermés.
+                Pyrénées, Dolomites, Corse, Jura — tout est sur la table.
+                Ta proposition est dans la boîte à idées ci-dessous.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                C'est quand ?
+                <span class="chevron">+</span>
+              </button>
+              <div class="accordion-body">
+                Généralement juillet–août pour les montagnes. Mais si l'idée implique
+                un autre format (week-end long, automne, etc.) on est ouverts.
+                Propose, on en discutera.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                Combien de jours ?
+                <span class="chevron">+</span>
+              </button>
+              <div class="accordion-body">
+                On tourne autour de 4–5 jours minimum. Assez pour souffrir en rando
+                et se remettre autour d'un bon repas. On a testé le format, on le garde.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                Y a-t-il un thème ?
+                <span class="chevron">+</span>
+              </button>
+              <div class="accordion-body">
+                Pas obligatoire. Mais si tu as une idée de thème — gastronomique,
+                sportif, culturel — on prend. L'édition "confit de canard en altitude"
+                n'est pas encore tombée.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                On invite du monde ?
+                <span class="chevron">+</span>
+              </button>
+              <div class="accordion-body">
+                C'est là qu'intervient le recrutement. Une ou deux places peuvent
+                s'ouvrir si le profil est Peccable-compatible.
+                <a href="recrutement.html" style="color:var(--orange);font-weight:600;">Postuler ici.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boîte à idées -->
+  <section class="section" style="background:var(--cream-dark);">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="label">Ta contribution</span>
+        <div class="divider"></div>
+        <h2>La boîte<br><em style="color:var(--orange);">à idées</em></h2>
+        <p>
+          Tu as une idée de destination, de format, d'activité, de restaurant mythique
+          ou d'endroit que tu voudrais nous faire découvrir ?
+          C'est ici que ça se passe.
+        </p>
+      </div>
+
+      <div class="idea-box" data-reveal>
+        <h3 style="color:var(--cream);margin-bottom:0.5rem;">Propose quelque chose</h3>
+        <p style="color:rgba(249,245,239,0.5);margin-bottom:2.5rem;font-size:0.9rem;">
+          Les meilleures idées viennent souvent de gens pas forcément membres du collectif.
+          On lit tout. On retient les bonnes.
+        </p>
+        <form id="idea-form" action="#" method="POST">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="idea-name">Ton prénom</label>
+              <input class="form-input" type="text" id="idea-name" name="name" placeholder="Prénom ou pseudo" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="idea-type">Type d'idée</label>
+              <select class="form-select" id="idea-type" name="type" required>
+                <option value="" disabled selected>Choisir une catégorie</option>
+                <option value="destination">Destination / lieu</option>
+                <option value="activite">Activité sportive</option>
+                <option value="restau">Restaurant / gastronomie</option>
+                <option value="format">Format / durée</option>
+                <option value="hebergement">Hébergement</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="idea-title">Le titre de ton idée</label>
+            <input class="form-input" type="text" id="idea-title" name="title" placeholder="Ex : « La traversée des Écrins en 5 jours »" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="idea-desc">Développe ton idée</label>
+            <textarea class="form-textarea" id="idea-desc" name="description"
+              placeholder="Pourquoi cette idée ? Qu'est-ce qui la rend Peccable ? Donne des détails : lieu, époque de l'année, niveau physique requis, ce qu'on mangerait là-bas..."
+              required></textarea>
+            <div class="form-hint">Pas de minimum. Plus tu détailles, plus c'est utile. Et si t'as un lien, mets-le.</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="idea-lien">Un lien utile (optionnel)</label>
+            <input class="form-input" type="url" id="idea-lien" name="lien" placeholder="https://..." />
+            <div class="form-hint">Fiche AllTrails, site de restau, article, Instagram — ce qui illustre le mieux l'idée.</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="idea-score" style="color:rgba(249,245,239,0.7);">
+              Sur une échelle de 1 à 10, ton idée est...
+            </label>
+            <select class="form-select" id="idea-score" name="score">
+              <option value="" disabled selected>Choisis honnêtement</option>
+              <option value="5">5 — Pas mal, mais à améliorer</option>
+              <option value="6">6 — Bien, t'as du potentiel</option>
+              <option value="7">7 — Bonne idée, vraiment</option>
+              <option value="8">8 — Très bonne idée</option>
+              <option value="9">9 — Peccablement bonne</option>
+              <option value="10">10 — Je mens probablement</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--gold" style="font-size:0.85rem;padding:1.1rem 2.5rem;">
+            Envoyer l'idée →
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Idées passées - placeholder -->
+  <section class="section--sm section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="label">Inspirations</span>
+        <div class="divider"></div>
+        <h2>Ce qui a déjà<br>été évoqué</h2>
+      </div>
+      <div class="grid-3" style="gap:1rem;">
+        <div data-reveal style="background:var(--white);border-radius:var(--radius-lg);padding:1.5rem;box-shadow:var(--shadow);">
+          <div style="font-size:1.5rem;margin-bottom:0.8rem;">🏔</div>
+          <div style="font-weight:600;margin-bottom:0.3rem;">Les Dolomites</div>
+          <p style="font-size:0.85rem;color:var(--muted);">Format trek 5 jours, Italie du Nord. On mange bien là-bas.</p>
+          <div style="margin-top:0.8rem;display:flex;align-items:center;gap:0.5rem;">
+            <div style="width:100%;background:var(--cream-dark);border-radius:10px;height:6px;">
+              <div style="width:75%;background:var(--orange);border-radius:10px;height:100%;"></div>
+            </div>
+            <span style="font-size:0.75rem;color:var(--muted);white-space:nowrap;">7.5/10</span>
+          </div>
+        </div>
+        <div data-reveal style="background:var(--white);border-radius:var(--radius-lg);padding:1.5rem;box-shadow:var(--shadow);">
+          <div style="font-size:1.5rem;margin-bottom:0.8rem;">🌊</div>
+          <div style="font-weight:600;margin-bottom:0.3rem;">La Corse GR20</div>
+          <p style="font-size:0.85rem;color:var(--muted);">Un classique. Difficile. Le charcutier de Corte valide l'idée.</p>
+          <div style="margin-top:0.8rem;display:flex;align-items:center;gap:0.5rem;">
+            <div style="width:100%;background:var(--cream-dark);border-radius:10px;height:6px;">
+              <div style="width:85%;background:var(--orange);border-radius:10px;height:100%;"></div>
+            </div>
+            <span style="font-size:0.75rem;color:var(--muted);white-space:nowrap;">8.5/10</span>
+          </div>
+        </div>
+        <div data-reveal style="background:var(--white);border-radius:var(--radius-lg);padding:1.5rem;box-shadow:var(--shadow);">
+          <div style="font-size:1.5rem;margin-bottom:0.8rem;">🍷</div>
+          <div style="font-weight:600;margin-bottom:0.3rem;">Les Pyrénées Ariégeoises</div>
+          <p style="font-size:0.85rem;color:var(--muted);">Moins fréquenté, plus sauvage. Et le cassoulet n'est pas loin.</p>
+          <div style="margin-top:0.8rem;display:flex;align-items:center;gap:0.5rem;">
+            <div style="width:100%;background:var(--cream-dark);border-radius:10px;height:6px;">
+              <div style="width:70%;background:var(--orange);border-radius:10px;height:100%;"></div>
+            </div>
+            <span style="font-size:0.75rem;color:var(--muted);white-space:nowrap;">7/10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__logo">Peccable</div>
+          <p class="footer__tagline">L'édition 5 existe dans nos têtes. Il manque juste la destination et la date.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Pages</div>
+          <nav class="footer__links">
+            <a href="index.html">Accueil</a>
+            <a href="personnes.html">Les Peccables</a>
+            <a href="editions.html">Éditions</a>
+            <a href="prochaine-edition.html">La Prochaine</a>
+            <a href="recrutement.html">Rejoindre</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer__col-title">Éditions</div>
+          <nav class="footer__links">
+            <a href="editions.html#pioniere">La Pionnière (2020)</a>
+            <a href="editions.html#bapteme">Le Baptême (2021)</a>
+            <a href="editions.html#confirmation">La Confirmation (2022)</a>
+            <a href="editions.html#inchallah">Inchallah (2023)</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer__col-title">Agir</div>
+          <nav class="footer__links">
+            <a href="prochaine-edition.html">Proposer une idée</a>
+            <a href="recrutement.html">Candidater</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2024 Collectif Peccable</span>
+        <span class="footer__edition">Édition 5 — à définir.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

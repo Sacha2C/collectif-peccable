@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Éditions — Peccable</title>
+  <meta name="description" content="4 éditions, 4 aventures dans les Alpes. De la Tournette à la Vanoise, du Beaufortain à l'inconnu." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Peccable</a>
+    <button class="nav__toggle" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="personnes.html">Les Peccables</a></li>
+      <li><a href="editions.html" class="active">Éditions</a></li>
+      <li><a href="prochaine-edition.html">La Prochaine</a></li>
+      <li><a href="recrutement.html" class="nav-cta">Rejoindre</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav__mobile">
+    <button class="nav__mobile-close" aria-label="Fermer" style="position:absolute;top:2rem;right:2.5rem;font-size:2rem;color:var(--cream);">✕</button>
+    <a href="index.html">Accueil</a>
+    <a href="personnes.html">Les Peccables</a>
+    <a href="editions.html">Éditions</a>
+    <a href="prochaine-edition.html">La Prochaine</a>
+    <a href="recrutement.html">Rejoindre</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="hero__bg-text">HISTORY</div>
+    <div class="container">
+      <span class="label">Archives</span>
+      <h1>Nos<br><em style="color:var(--gold);">Éditions</em></h1>
+      <p class="page-hero__sub">
+        Quatre chapitres. Quatre lieux. Des kilomètres absurdes, des repas incroyables,
+        et des souvenirs qui méritent d'être documentés.
+      </p>
+    </div>
+  </section>
+
+  <!-- Stats globales -->
+  <div style="background:var(--orange);padding:2.5rem 0;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;" data-reveal>
+        <div>
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:900;color:var(--white);line-height:1;">4</div>
+          <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.15em;color:rgba(255,255,255,0.65);margin-top:0.3rem;">Éditions</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:900;color:var(--white);line-height:1;">+200</div>
+          <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.15em;color:rgba(255,255,255,0.65);margin-top:0.3rem;">Km parcourus</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:900;color:var(--white);line-height:1;">~15k</div>
+          <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.15em;color:rgba(255,255,255,0.65);margin-top:0.3rem;">D+ cumulés</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:900;color:var(--white);line-height:1;">0</div>
+          <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.15em;color:rgba(255,255,255,0.65);margin-top:0.3rem;">Abandon (officiel)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Éditions -->
+  <section class="section">
+    <div class="container">
+      <div style="display:flex;flex-direction:column;gap:2.5rem;">
+
+        <!-- Édition 1 -->
+        <div id="pioniere" class="edition-card" data-reveal>
+          <div class="edition-card__side">
+            <div class="edition-card__number">01</div>
+            <div class="edition-card__year">Juillet 2020</div>
+          </div>
+          <div class="edition-card__body">
+            <div class="edition-card__subtitle">Édition fondatrice</div>
+            <div class="edition-card__title">La Pionnière</div>
+            <p class="edition-card__desc">
+              La première. Celle qui a tout déclenché. Annecy comme point de chute,
+              la Tournette et la Pointe d'Arcalod comme terrains de jeu.
+              On ne savait pas encore qu'on allait faire ça tous les ans.
+              Mais en descendant, on savait déjà qu'on recommencerait.
+            </p>
+            <div class="edition-card__stats">
+              <div class="stat">
+                <div class="stat__val">Annecy</div>
+                <div class="stat__key">Destination</div>
+              </div>
+              <div class="stat">
+                <div class="stat__val">2</div>
+                <div class="stat__key">Sommets</div>
+              </div>
+              <div class="stat">
+                <div class="stat__val">La Tournette</div>
+                <div class="stat__key">Point culminant</div>
+              </div>
+            </div>
+            <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <span class="tag tag--forest">Randonnée journée</span>
+              <span class="tag tag--forest">Annecy</span>
+              <span class="tag tag--forest">Édition fondatrice</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Édition 2 -->
+        <div id="bapteme" class="edition-card" data-reveal>
+          <div class="edition-card__side" style="background:var(--forest-mid);">
+            <div class="edition-card__number">02</div>
+            <div class="edition-card__year">Août 2021</div>
+          </div>
+          <div class="edition-card__body">
+            <div class="edition-card__subtitle">L'édition du nom</div>
+            <div class="edition-card__title">Le Baptême</div>
+            <p class="edition-card__desc">
+              C'est ici qu'on a trouvé le nom. Vanoise, bivouacs, nuits sous les étoiles
+              et une philosophie qui s'est cristallisée au fil des sentiers.
+              "Peccable" est né dans un refuge, quelque part entre deux fromages.
+              Albert Camus et le Beaufort étaient témoins.
+            </p>
+            <div class="edition-card__stats">
+              <div class="stat">
+                <div class="stat__val">Vanoise</div>
+                <div class="stat__key">Destination</div>
+              </div>
+              <div class="stat">
+                <div class="stat__val">Trek</div>
+                <div class="stat__key">Format</div>
+              </div>
+              <div class="stat">
+                <div class="stat__val">Bivouacs</div>
+                <div class="stat__key">Nuits</div>
+              </div>
+            </div>
+            <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <span class="tag tag--forest">Trek multi-jours</span>
+              <span class="tag tag--forest">Vanoise</span>
+              <span class="tag tag--forest">Naissance du nom</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Édition 3 -->
+        <div id="confirmation" class="edition-card" data-reveal>
+          <div class="edition-card__side" style="background:var(--orange);">
+            <div class="edition-card__number">03</div>
+            <div class="edition-card__year">Juillet 2022</div>
+          </div>
+          <div class="edition-card__body">
+            <div class="edition-card__subtitle">L'édition intense</div>
+            <div class="edition-card__title">La Confirmation</div>
+            <p class="edition-card__desc">
+              Le Beaufortain. Hiking poussé à son paroxysme, avec une via ferrata
+              bonus pour ceux qui trouvaient que monter 1500m de D+ ne suffisait pas.
+              Marie intègre le collectif. Le fromage local valide l'édition.
+            </p>
+            <div class="edition-card__stats">
+              <div class="stat">
+                <div class="stat__val">Beaufortain</div>
+                <div class="stat__key">Destination</div>
+              </div>
+              <div class="stat">
+                <div class="stat__val">Via ferrata</div>
+                <div class="stat__key">Bonus</div>
+              </div>
+              <div class="stat">
+                <div class="stat__val">+1</div>
+                <div class="stat__key">Nouveau membre</div>
+              </div>
+            </div>
+            <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <span class="tag tag--orange">Hiking intensif</span>
+              <span class="tag tag--orange">Beaufortain</span>
+              <span class="tag tag--orange">Via ferrata</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Édition 4 -->
+        <div id="inchallah" class="edition-card" data-reveal>
+          <div class="edition-card__side" style="background:var(--gold);">
+            <div class="edition-card__number" style="color:rgba(17,17,17,0.12);">04</div>
+            <div class="edition-card__year" style="color:var(--charcoal);">2023</div>
+          </div>
+          <div class="edition-card__body">
+            <div class="edition-card__subtitle">L'édition mystérieuse</div>
+            <div class="edition-card__title">Inchallah</div>
+            <p class="edition-card__desc">
+              "L'histoire est maintenant à écrire." C'est ce qu'on disait avant.
+              Elle l'est maintenant. Les détails restent confidentiels.
+              Les souvenirs sont vivaces. Le bilan gastronomique est positif.
+              On verra pour la prochaine.
+            </p>
+            <div class="edition-card__stats">
+              <div class="stat">
+                <div class="stat__val">Classifié</div>
+                <div class="stat__key">Destination</div>
+              </div>
+              <div class="stat">
+                <div class="stat__val">Inchallah</div>
+                <div class="stat__key">Niveau confiance</div>
+              </div>
+              <div class="stat">
+                <div class="stat__val">✓</div>
+                <div class="stat__key">Bilan</div>
+              </div>
+            </div>
+            <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <span class="tag" style="color:var(--forest);border-color:var(--forest);">2023</span>
+              <span class="tag" style="color:var(--forest);border-color:var(--forest);">Mystère</span>
+              <span class="tag" style="color:var(--forest);border-color:var(--forest);">Confidentiel</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Prochaine édition teaser -->
+  <section class="section" style="background:var(--forest);">
+    <div class="container" data-reveal style="text-align:center;">
+      <span class="label" style="color:var(--gold);">La suite</span>
+      <h2 style="color:var(--cream);margin:1rem 0;">Édition 5 :<br><em style="color:var(--gold);">encore à définir</em></h2>
+      <p style="color:rgba(249,245,239,0.55);max-width:500px;margin:0 auto 2.5rem;">
+        On prépare la prochaine. Les idées sont les bienvenues.
+        Les candidatures aussi.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="prochaine-edition.html" class="btn btn--primary">Voir la prochaine édition</a>
+        <a href="recrutement.html" class="btn btn--outline">Postuler</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__logo">Peccable</div>
+          <p class="footer__tagline">Quatre éditions. Beaucoup de dénivelé. Encore plus de fromage.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Pages</div>
+          <nav class="footer__links">
+            <a href="index.html">Accueil</a>
+            <a href="personnes.html">Les Peccables</a>
+            <a href="editions.html">Éditions</a>
+            <a href="prochaine-edition.html">La Prochaine</a>
+            <a href="recrutement.html">Rejoindre</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer__col-title">Éditions</div>
+          <nav class="footer__links">
+            <a href="#pioniere">La Pionnière (2020)</a>
+            <a href="#bapteme">Le Baptême (2021)</a>
+            <a href="#confirmation">La Confirmation (2022)</a>
+            <a href="#inchallah">Inchallah (2023)</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer__col-title">Rejoindre</div>
+          <nav class="footer__links">
+            <a href="prochaine-edition.html">Proposer une idée</a>
+            <a href="recrutement.html">Candidater</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2024 Collectif Peccable</span>
+        <span class="footer__edition">4 éditions. Toutes peccablement réussies.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
