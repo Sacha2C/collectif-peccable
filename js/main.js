@@ -54,11 +54,11 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
+      entry.target.style.transform = 'none';
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0 });
 
 document.querySelectorAll('[data-reveal]').forEach(el => {
   el.style.opacity = '0';
@@ -83,7 +83,7 @@ const appForm = document.getElementById('application-form');
 appForm?.addEventListener('submit', e => {
   e.preventDefault();
   const btn = appForm.querySelector('[type="submit"]');
-  btn.textContent = 'Candidature reçue — on verra si t'es à la hauteur';
+  btn.textContent = "Candidature reçue — on verra si t'es à la hauteur";
   btn.disabled = true;
 });
 
@@ -94,6 +94,15 @@ function updateScore() {
   checked.forEach(c => score += parseInt(c.dataset.pts || 0));
   const scoreEl = document.getElementById('live-score');
   if (scoreEl) scoreEl.textContent = score;
+  const verdictEl = document.getElementById('score-verdict');
+  if (verdictEl) {
+    if (score === 0) verdictEl.textContent = 'Coche les cases pour voir ton verdict.';
+    else if (score < 30) verdictEl.textContent = 'Pas encore Peccable. Reprends la rando.';
+    else if (score < 50) verdictEl.textContent = 'Du potentiel. À confirmer sur le terrain.';
+    else if (score < 70) verdictEl.textContent = 'Plutôt Peccable. Le dossier mérite d\'être ouvert.';
+    else if (score < 90) verdictEl.textContent = 'Clairement Peccable. Envoie ta candidature.';
+    else verdictEl.textContent = 'Tu mens probablement. Mais on t\'aime quand même.';
+  }
 }
 document.querySelectorAll('.criterion-check').forEach(c => {
   c.addEventListener('change', updateScore);

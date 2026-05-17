@@ -634,6 +634,36 @@ p.lead { font-size: clamp(1.1rem, 1.8vw, 1.35rem); color: var(--charcoal); line-
   flex-shrink: 0;
 }
 
+/* ── Photo Gallery ── */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.photo-grid__item {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.25s;
+  cursor: pointer;
+}
+.photo-grid__item:hover { opacity: 0.88; }
+.photo-grid__empty {
+  grid-column: 1 / -1;
+  padding: 3rem;
+  text-align: center;
+  background: var(--cream-dark);
+  border-radius: var(--radius-lg);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+  .photo-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* ── Accordion (FAQ-like) ── */
 .accordion-item {
   border-bottom: 1px solid var(--cream-dark);
